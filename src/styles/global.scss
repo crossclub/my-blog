@@ -1,0 +1,47 @@
+p {
+  margin-bottom: 0;
+}
+a {
+  box-shadow: none;
+  color: #333;
+}
+// メインコンテンツ
+.main_container {
+  @media screen and (max-width: 767px) {
+    margin: 0 15px 90px;
+  }
+  @media screen and (min-width: 768px) {
+    margin: 60px 15px;
+  }
+  max-width: 100%;
+}
+.container {
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
+  @media screen and (min-width: 768px) {
+    width: 700px;
+  }
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+// タイトル
+.headline > .en,
+.headline > .jp {
+  display: block;
+}
+
+.headline > .jp {
+  font-size: 15px;
+}

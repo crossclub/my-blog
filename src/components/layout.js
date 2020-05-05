@@ -1,68 +1,63 @@
 import React from "react"
 import { Link } from "gatsby"
-
 import { rhythm, scale } from "../utils/typography"
 
 const Layout = ({ location, title, children }) => {
-  const rootPath = `${__PATH_PREFIX__}/`
-  let header
+  // ナビゲーションバーに表示するリンク
+  const NavMenuItem = ["Home", "Profile", "Blog", "Works", "Contact"]
 
-  if (location.pathname === rootPath) {
-    header = (
-      <h1
-        style={{
-          ...scale(1.5),
-          marginBottom: rhythm(1.5),
-          marginTop: 0,
-        }}
-      >
-        <Link
-          style={{
-            boxShadow: `none`,
-            color: `inherit`,
-          }}
-          to={`/`}
-        >
-          {title}
-        </Link>
-      </h1>
-    )
-  } else {
-    header = (
-      <h3
-        style={{
-          fontFamily: `Montserrat, sans-serif`,
-          marginTop: 0,
-        }}
-      >
-        <Link
-          style={{
-            boxShadow: `none`,
-            color: `inherit`,
-          }}
-          to={`/`}
-        >
-          {title}
-        </Link>
-      </h3>
-    )
+  // アクティブになったリンクは色を反転させる
+  const ActiveStyles = {
+    background: "white",
+    color: "rebeccapurple",
+    fontWeight: "bold",
   }
+
+  // ナビゲーションリンクの作成
+  const NavMenuLiTag = NavMenuItem.map(item => {
+    let page_link = ""
+    if (item === "Home") {
+      page_link = "/"
+    } else page_link = "/" + item.toLowerCase() + "/"
+
+    return (
+      <li key={page_link} className={"luxbar-item"}>
+        <Link to={page_link} activeStyle={ActiveStyles}>
+          {item}
+        </Link>
+      </li>
+    )
+  })
   return (
     <div
       style={{
         marginLeft: `auto`,
         marginRight: `auto`,
-        maxWidth: rhythm(24),
-        padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
+        maxWidth: "100%",
+        // padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
       }}
     >
-      <header>{header}</header>
-      <main>{children}</main>
-      <footer>
-        © {new Date().getFullYear()}, Built with
-        {` `}
-        <a href="https://www.gatsbyjs.org">Gatsby</a>
-      </footer>
+      <header id="luxbar" class="luxbar-fixed">
+        <input type="checkbox" class="luxbar-checkbox" id="luxbar-checkbox" />
+        <div class="luxbar-menu luxbar-menu-right luxbar-menu-material-cyan">
+          <ul class="luxbar-navigation">
+            <li class="luxbar-header">
+              <Link className="luxbar-brand" to="/">
+                Watanabe Takuma
+              </Link>
+              <label
+                class="luxbar-hamburger luxbar-hamburger-doublespin"
+                id="luxbar-hamburger"
+                for="luxbar-checkbox"
+              >
+                <span></span>
+              </label>
+            </li>
+            {NavMenuLiTag}
+          </ul>
+        </div>
+      </header>
+      <main className={"main_container"}>{children}</main>
     </div>
   )
 }

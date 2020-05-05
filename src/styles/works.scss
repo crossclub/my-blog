@@ -1,0 +1,40 @@
+.work_content:nth-child(odd) {
+  @media (max-width: 991px) {
+    border-right: 1px solid;
+    border-color: #b5b5b5;
+  }
+  @media (min-width: 992px) {
+    border-color: #fff !important;
+  }
+}
+.work_content {
+  @media (max-width: 991px) {
+    border-bottom: 1px solid;
+    border-color: #b5b5b5;
+  }
+  @media (min-width: 992px) {
+    padding: 3rem !important;
+  }
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: auto;
+  align-self: auto;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-flex: 0;
+  -ms-flex: none;
+  flex: none;
+  text-align: center !important;
+  padding: 1.5rem !important;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.work_content a img {
+  width: 80%;
+}
