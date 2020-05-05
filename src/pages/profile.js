@@ -22,7 +22,37 @@ const Profile = ({ data, location }) => {
         </h1>
       </div>
       <div>
-        <h2>渡部拓磨</h2>
+        <h4 className={"headline"}>
+          <span className={"en"} lang="en">
+            Watanabe Takuma
+          </span>
+        </h4>
+      </div>
+      <div>
+        <p>
+          1997年　島根生まれ。 <br />
+          2018年　東京に上京。 <br />
+          2020年　株式会社ARUTEGAプロジェクト参加
+        </p>
+        <p>
+          In 1997, Born in Shimane. <br />
+          In 2018, moved to Tokyo. <br />
+          In 2020, Participation in ARUTEGA Project
+        </p>
+      </div>
+      <div>
+        <h4 className={"headline"}>
+          <span className={"en"} lang="en">
+            Service
+          </span>
+        </h4>
+        <p>
+          larcenymodule　| コーポレートサイト
+          <br />
+          青空珈琲部　| コーポレートサイト
+          <br />
+          etc..
+        </p>
       </div>
     </Layout>
   )

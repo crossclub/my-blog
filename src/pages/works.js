@@ -31,22 +31,95 @@ const Works = ({ data, location }) => {
         <div className={"row"}>
           <div className={"work_content"}>
             <a>
-              <img src={crossclublog_s} alt="crossclublog" />
+              <figure className={"hover_parent"}>
+                <img src={aozoracoffeeclub} alt="aozoracoffeeclub" />
+                <figcaption className={"hover_mask"}>
+                  <a href="https://aozoracoffeeclub.com/" target="blank">
+                    https://aozoracoffeeclub.com/
+                  </a>
+                </figcaption>
+              </figure>
             </a>
           </div>
           <div className={"work_content"}>
             <a>
-              <img src={crossclublog_s} alt="crossclublog" />
+              <figure className={"hover_parent"}>
+                <img src={Nourritureetvie} alt="Nourritureetvie" />
+                <figcaption className={"hover_mask"}>
+                  <a
+                    href="https://watakuma21.xsrv.jp/Nourritureetvie/"
+                    target="blank"
+                  >
+                    https://watakuma21.xsrv.jp/Nourritureetvie/
+                  </a>
+                </figcaption>
+              </figure>
             </a>
           </div>
           <div className={"work_content"}>
             <a>
-              <img src={crossclublog_s} alt="crossclublog" />
+              <figure className={"hover_parent"}>
+                <img src={Regenschirm} alt="Regenschirm" />
+                <figcaption className={"hover_mask"}>
+                  <a
+                    href="https://watakuma21.xsrv.jp/Regenschirm/"
+                    target="blank"
+                  >
+                    https://watakuma21.xsrv.jp/Regenschirm/
+                  </a>
+                </figcaption>
+              </figure>
             </a>
           </div>
           <div className={"work_content"}>
             <a>
-              <img src={crossclublog_s} alt="crossclublog" />
+              <figure className={"hover_parent"}>
+                <img src={my_portfolio} alt="my_portfolio" />
+                <figcaption className={"hover_mask"}>
+                  <a href="https://watanabetakuma.work" target="blank">
+                    https://watanabetakuma.work
+                  </a>
+                </figcaption>
+              </figure>
+            </a>
+          </div>
+          <div className={"work_content"}>
+            <a>
+              <figure className={"hover_parent"}>
+                <img src={configure} alt="configure" />
+                <figcaption className={"hover_mask"}>
+                  <a
+                    href="https://watakuma21.xsrv.jp/Configure/"
+                    target="blank"
+                  >
+                    https://watakuma21.xsrv.jp/Configure/
+                  </a>
+                </figcaption>
+              </figure>
+            </a>
+          </div>
+          <div className={"work_content"}>
+            <a>
+              <figure className={"hover_parent"}>
+                <img src={larcenymodule} alt="larcenymodule" />
+                <figcaption className={"hover_mask"}>
+                  <a href="https://larcenymodule.com/" target="blank">
+                    https://larcenymodule.com/
+                  </a>
+                </figcaption>
+              </figure>
+            </a>
+          </div>
+          <div className={"work_content"}>
+            <a>
+              <figure className={"hover_parent"}>
+                <img src={crossclublog_s} alt="crossclublog" />
+                <figcaption className={"hover_mask"}>
+                  <a href="https://crossclublog.com/" target="blank">
+                    https://crossclublog.com/
+                  </a>
+                </figcaption>
+              </figure>
             </a>
           </div>
         </div>

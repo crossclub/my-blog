@@ -1,14 +1,33 @@
+html {
+  font: 13px "Playfair Display SC", "游明朝", YuMincho, "ヒラギノ明朝 ProN W3",
+    "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+}
 p {
   margin-bottom: 0;
+  letter-spacing: 2.5px;
+  line-height: 2;
 }
 a {
   box-shadow: none;
   color: #333;
 }
+img {
+  margin-bottom: 0;
+}
+h1 {
+  font-family: "Playfair Display SC", "游明朝", YuMincho, "ヒラギノ明朝 ProN W3",
+    "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+}
+@media only screen and (max-width: 480px) {
+  ul,
+  ol {
+    margin-left: 0;
+  }
+}
 // メインコンテンツ
 .main_container {
   @media screen and (max-width: 767px) {
-    margin: 0 15px 90px;
+    margin: 0 30px 90px;
   }
   @media screen and (min-width: 768px) {
     margin: 60px 15px;
@@ -39,9 +58,61 @@ a {
 // タイトル
 .headline > .en,
 .headline > .jp {
+  text-align: center;
   display: block;
 }
 
 .headline > .jp {
   font-size: 15px;
+}
+
+// SIDER RIGHT
+#frame_right {
+  position: fixed;
+  top: 0;
+  right: -20px;
+  bottom: 0;
+  height: 100%;
+  width: 0;
+}
+#frame_right p {
+  position: absolute;
+  top: 36%;
+  left: -13%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  letter-spacing: 6px;
+  width: 197px;
+  height: 160px;
+  font-size: 10px;
+  color: #444;
+  -webkit-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+// SIDER LEFT
+#frame_left {
+  position: fixed;
+  top: 0;
+  left: -20px;
+  bottom: 0;
+  height: 100%;
+  width: 0;
+}
+#frame_left p {
+  position: absolute;
+  top: 58%;
+  left: 57%;
+  height: 378px;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  letter-spacing: 3px;
+  font-size: 8px;
+  color: #444;
+  -ms-writing-mode: tb-rl;
+  -webkit-writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
 }

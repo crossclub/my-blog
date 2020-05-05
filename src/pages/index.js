@@ -1,9 +1,14 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
-
-// import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import LargeImage15 from "../assets/img/large-image15.jpg"
+import LargeImage19 from "../assets/img/large-image19.jpg"
+import LargeImage51 from "../assets/img/large-image51.jpg"
+import LargeImage53 from "../assets/img/large-image53.jpg"
+import LargeImage54 from "../assets/img/large-image54.jpg"
+import LargeImage74 from "../assets/img/large-image74.jpg"
+// import Bio from "../components/bio"
 import { rhythm } from "../utils/typography"
 
 const BlogIndex = ({ data, location }) => {
@@ -13,8 +18,15 @@ const BlogIndex = ({ data, location }) => {
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title="HOME" />
-      {/* <Bio /> */}
-      {/* {posts.map(({ node }) => {
+      <img src={LargeImage54} alt="crossclublog" />
+      <div>
+        <h4 className={"headline"}>
+          <span className={"en"} lang="en">
+            Blog
+          </span>
+        </h4>
+      </div>
+      {posts.map(({ node }) => {
         const title = node.frontmatter.title || node.fields.slug
         return (
           <article key={node.fields.slug}>
@@ -39,7 +51,7 @@ const BlogIndex = ({ data, location }) => {
             </section>
           </article>
         )
-      })} */}
+      })}
     </Layout>
   )
 }

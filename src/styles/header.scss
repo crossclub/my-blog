@@ -124,6 +124,9 @@
   height: 100vh;
   overflow: auto;
 }
+.luxbar-checkbox:checked ~ .luxbar-menu ul {
+  margin-top: 50%;
+}
 .dropdown {
   position: relative;
   height: auto;

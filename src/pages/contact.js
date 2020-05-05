@@ -1,10 +1,11 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
-
-import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { rhythm } from "../utils/typography"
+import twitter from "../assets/img/sns_tw.png"
+import instagram from "../assets/img/sns_ins.png"
+// import Bio from "../components/bio"
+// import { rhythm } from "../utils/typography"
 
 const Contact = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title
@@ -20,11 +21,19 @@ const Contact = ({ data, location }) => {
           </span>
           <span className={"jp"}>お問い合わせ</span>
         </h1>
-        <p>
-          HP制作のご依頼・ご相談は、
-          <br />
-          以下のtwitter,Instagramで受け付けております .
-        </p>
+      </div>
+      <p style={{ textAlign: "center" }}>
+        ご依頼・ご相談は、
+        <br />
+        以下からご連絡ください。
+      </p>
+      <div>
+        <a href="https://www.instagram.com/crossclub_t/" target="blank">
+          <img src={instagram} alt="instagram" />
+        </a>
+        <a href="https://www.twitter.com/crossclub_t/" target="blank">
+          <img src={twitter} alt="twitter" />
+        </a>
       </div>
     </Layout>
   )

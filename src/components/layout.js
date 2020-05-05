@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import { rhythm, scale } from "../utils/typography"
+// import { rhythm, scale } from "../utils/typography"
 
 const Layout = ({ location, title, children }) => {
   // ナビゲーションバーに表示するリンク
@@ -9,7 +9,7 @@ const Layout = ({ location, title, children }) => {
   // アクティブになったリンクは色を反転させる
   const ActiveStyles = {
     background: "white",
-    color: "rebeccapurple",
+    color: "#333",
     fontWeight: "bold",
   }
 
@@ -57,6 +57,12 @@ const Layout = ({ location, title, children }) => {
           </ul>
         </div>
       </header>
+      <div id="frame_left" style={{ width: "40px" }}>
+        <p>WEB DIRECTOR / WEB DEVELOPER</p>
+      </div>
+      <div id="frame_right" style={{ width: "50px" }}>
+        <p>WATANABE TAKUMA</p>
+      </div>
       <main className={"main_container"}>{children}</main>
     </div>
   )
