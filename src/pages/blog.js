@@ -13,6 +13,14 @@ const Blog = ({ data, location }) => {
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title="Blog" />
+      <div>
+        <h1 className={"headline"}>
+          <span className={"en"} lang="en">
+            Blog
+          </span>
+          <span className={"jp"}>ブログ</span>
+        </h1>
+      </div>
       {/* <Bio /> */}
       {posts.map(({ node }) => {
         const title = node.frontmatter.title || node.fields.slug
