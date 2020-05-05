@@ -4,6 +4,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import twitter from "../assets/img/sns_tw.png"
 import instagram from "../assets/img/sns_ins.png"
+import "../styles/contact.scss"
 // import Bio from "../components/bio"
 // import { rhythm } from "../utils/typography"
 
@@ -23,18 +24,8 @@ const Contact = ({ data, location }) => {
         </h1>
       </div>
       <p style={{ textAlign: "center" }}>
-        ご依頼・ご相談は、
-        <br />
-        以下からご連絡ください。
+        ご依頼・ご相談は、以下からご連絡ください。
       </p>
-      <div>
-        <a href="https://www.instagram.com/crossclub_t/" target="blank">
-          <img src={instagram} alt="instagram" />
-        </a>
-        <a href="https://www.twitter.com/crossclub_t/" target="blank">
-          <img src={twitter} alt="twitter" />
-        </a>
-      </div>
     </Layout>
   )
 }
