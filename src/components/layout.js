@@ -57,13 +57,18 @@ const Layout = ({ location, title, children }) => {
           </ul>
         </div>
       </header>
-      <div id="frame_left" style={{ width: "40px" }}>
+      <div
+        id="frame_top"
+        className={"sp_only"}
+        style={{ height: "50px" }}
+      ></div>
+      <div id="frame_left" style={{ width: "50px" }}>
         <p>WEB DIRECTOR / WEB DEVELOPER</p>
       </div>
       <div id="frame_right" style={{ width: "50px" }}>
         <p>WATANABE TAKUMA</p>
       </div>
-      <main className={"main_container"}>{children}</main>
+      <main>{children}</main>
     </div>
   )
 }

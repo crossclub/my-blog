@@ -1,5 +1,6 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+// import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import crossclublog_s from "../assets/img/crossclublog.jpg"
@@ -14,23 +15,23 @@ import aozoracoffeeclub from "../assets/img/aozoracoffeeclub.jpg"
 
 const Works = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title
-  const posts = data.allMarkdownRemark.edges
+  // const posts = data.allMarkdownRemark.edges
 
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title="Works" />
-      <div>
-        <h1 className={"headline"}>
-          <span className={"en"} lang="en">
-            Works
-          </span>
-          <span className={"jp"}>サイト一覧</span>
-        </h1>
-      </div>
-      <div className={"container"}>
-        <div className={"row"}>
-          <div className={"work_content"}>
-            <a>
+      <div className={"main_container"}>
+        <div className={"page_title"}>
+          <h1 className={"headline"}>
+            <span className={"en"} lang="en">
+              Works
+            </span>
+            <span className={"jp"}>サイト一覧</span>
+          </h1>
+        </div>
+        <div className={"container"}>
+          <div className={"row"}>
+            <div className={"work_content"}>
               <figure className={"hover_parent"}>
                 <img src={aozoracoffeeclub} alt="aozoracoffeeclub" />
                 <figcaption className={"hover_mask"}>
@@ -39,10 +40,8 @@ const Works = ({ data, location }) => {
                   </a>
                 </figcaption>
               </figure>
-            </a>
-          </div>
-          <div className={"work_content"}>
-            <a>
+            </div>
+            <div className={"work_content"}>
               <figure className={"hover_parent"}>
                 <img src={Nourritureetvie} alt="Nourritureetvie" />
                 <figcaption className={"hover_mask"}>
@@ -54,10 +53,8 @@ const Works = ({ data, location }) => {
                   </a>
                 </figcaption>
               </figure>
-            </a>
-          </div>
-          <div className={"work_content"}>
-            <a>
+            </div>
+            <div className={"work_content"}>
               <figure className={"hover_parent"}>
                 <img src={Regenschirm} alt="Regenschirm" />
                 <figcaption className={"hover_mask"}>
@@ -69,10 +66,8 @@ const Works = ({ data, location }) => {
                   </a>
                 </figcaption>
               </figure>
-            </a>
-          </div>
-          <div className={"work_content"}>
-            <a>
+            </div>
+            <div className={"work_content"}>
               <figure className={"hover_parent"}>
                 <img src={my_portfolio} alt="my_portfolio" />
                 <figcaption className={"hover_mask"}>
@@ -81,10 +76,8 @@ const Works = ({ data, location }) => {
                   </a>
                 </figcaption>
               </figure>
-            </a>
-          </div>
-          <div className={"work_content"}>
-            <a>
+            </div>
+            <div className={"work_content"}>
               <figure className={"hover_parent"}>
                 <img src={configure} alt="configure" />
                 <figcaption className={"hover_mask"}>
@@ -96,10 +89,8 @@ const Works = ({ data, location }) => {
                   </a>
                 </figcaption>
               </figure>
-            </a>
-          </div>
-          <div className={"work_content"}>
-            <a>
+            </div>
+            <div className={"work_content"}>
               <figure className={"hover_parent"}>
                 <img src={larcenymodule} alt="larcenymodule" />
                 <figcaption className={"hover_mask"}>
@@ -108,10 +99,8 @@ const Works = ({ data, location }) => {
                   </a>
                 </figcaption>
               </figure>
-            </a>
-          </div>
-          <div className={"work_content"}>
-            <a>
+            </div>
+            <div className={"work_content"}>
               <figure className={"hover_parent"}>
                 <img src={crossclublog_s} alt="crossclublog" />
                 <figcaption className={"hover_mask"}>
@@ -120,7 +109,7 @@ const Works = ({ data, location }) => {
                   </a>
                 </figcaption>
               </figure>
-            </a>
+            </div>
           </div>
         </div>
       </div>

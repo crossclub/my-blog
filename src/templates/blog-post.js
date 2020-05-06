@@ -1,7 +1,7 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 
-import Bio from "../components/bio"
+// import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm, scale } from "../utils/typography"
@@ -13,17 +13,18 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <div className={"main_container"}>
+      <div className={"main_container"} style={{ marginTop: "20%" }}>
         <SEO
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
         />
-        <article>
+        <article style={{ margin: "auto 5%" }}>
           <header>
             <h1
               style={{
                 marginTop: rhythm(1),
                 marginBottom: 0,
+                fontSize: "1.6rem",
               }}
             >
               {post.frontmatter.title}

@@ -18,6 +18,23 @@ h1 {
   font-family: "Playfair Display SC", "游明朝", YuMincho, "ヒラギノ明朝 ProN W3",
     "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
 }
+
+@media screen and (max-width: 767px) {
+  .sp_only {
+    display: block;
+  }
+  .pc_only {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .sp_only {
+    display: none;
+  }
+  .pc_only {
+    display: block;
+  }
+}
 @media only screen and (max-width: 480px) {
   ul,
   ol {
@@ -31,6 +48,15 @@ h1 {
   }
   @media screen and (min-width: 768px) {
     margin: 60px 15px;
+  }
+  max-width: 100%;
+}
+.main_container_index {
+  @media screen and (max-width: 767px) {
+    margin: 0 30px 90px;
+  }
+  @media screen and (min-width: 768px) {
+    margin: 0;
   }
   max-width: 100%;
 }
@@ -66,6 +92,23 @@ h1 {
   font-size: 15px;
 }
 
+.page_title {
+  margin-top: 10%;
+}
+
+// TOP
+#frame_top {
+  position: fixed;
+  top: -20px;
+  left: 0;
+  right: 0;
+  height: 0;
+  width: 100%;
+  background: #ffff;
+  z-index: 1500;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
 // SIDER RIGHT
 #frame_right {
   position: fixed;
@@ -74,6 +117,7 @@ h1 {
   bottom: 0;
   height: 100%;
   width: 0;
+  background: #fff;
 }
 #frame_right p {
   position: absolute;
@@ -100,6 +144,7 @@ h1 {
   bottom: 0;
   height: 100%;
   width: 0;
+  background: #fff;
 }
 #frame_left p {
   position: absolute;

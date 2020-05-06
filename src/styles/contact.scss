@@ -1,0 +1,52 @@
+// .center_center {
+//   position: absolute;
+//   top: 50%;
+//   left: 50%;
+//   transform: translate(-50%, -50%);
+// }
+
+.twitter {
+  background-color: rgb(29, 161, 242);
+}
+
+.instagram {
+  background: -webkit-linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;
+  background: linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat; /*グラデーション①*/
+}
+
+.gmail {
+  background-color: #d54b3e;
+}
+
+.twitter,
+.instagram,
+.gmail {
+  color: #fff; /*文字・アイコン色*/
+  border-radius: 7px; /*角丸に*/
+  position: relative;
+  display: inline-block;
+  height: 50px; /*高さ*/
+  width: 190px; /*幅*/
+  text-align: center; /*中身を中央寄せ*/
+  font-size: 14px; /*文字のサイズ*/
+  line-height: 50px; /*高さと合わせる*/
+  overflow: hidden; /*はみ出た部分を隠す*/
+  text-decoration: none; /*下線は消す*/
+  margin: 7%;
+}
+
+.twitter a,
+.instagram a,
+.gmail a {
+  color: #fff; /*文字・アイコン色*/
+  display: inline-block;
+  transition: 0.5s;
+}
+.twitter a:hover,
+.instagram a:hover,
+.gmail a:hover {
+  /*ホバーで一周回転*/
+  -webkit-transform: rotateX(360deg);
+  -ms-transform: rotateX(360deg);
+  transform: rotateX(360deg);
+}
