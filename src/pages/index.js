@@ -39,7 +39,7 @@ const BlogIndex = ({ data, location }) => {
                   <div class="ball">O</div>
                 </div>
                 <div class="container_ball" style={{ marginTop: "10%" }}>
-                  <div style={{ textAlign: "center" }}>
+                  <div style={{ textAlign: "center", color: "#fff" }}>
                     <p>サイト覗いていただいてありがとうございます！</p>
                     <p>現在は、東京でWEB制作のお仕事を中心に活動しています。</p>
                     <p>
